@@ -1,12 +1,6 @@
 -- =====================================================================
 -- SQL PROJECT: LIBRARY DATABASE ANALYSIS
 -- =====================================================================
--- Order of execution:
---   1. Create database
---   2. Create tables (in FK-safe order)
---   3. Load CSV data (in FK-safe order)
---   4. Run task queries (Q1 - Q7)
--- =====================================================================
 
 CREATE DATABASE IF NOT EXISTS library_db;
 USE library_db;
