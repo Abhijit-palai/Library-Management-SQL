@@ -77,15 +77,7 @@ CREATE TABLE tbl_book_loans (
     FOREIGN KEY (book_loans_CardNo) REFERENCES tbl_borrower(borrower_CardNo)
 );
 
--- =====================================================================
--- STEP 2: LOAD DATA
--- Load order matters because of foreign keys.
--- Adjust the file path below to wherever your CSVs live locally,
--- and make sure 'local_infile' is enabled on your MySQL client/server,
--- OR use MySQL Workbench's "Table Data Import Wizard" instead
--- (right-click table -> Table Data Import Wizard) which handles this
--- without needing LOAD DATA LOCAL INFILE permissions.
--- =====================================================================
+-- Load data
 
 -- 1. Publishers
 LOAD DATA LOCAL INFILE 'publisher.csv'
